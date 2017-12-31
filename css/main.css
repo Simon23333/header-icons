@@ -1,4 +1,9 @@
 * {
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+
+html {
   margin: 0;
   padding: 0;
 }
@@ -18,6 +23,7 @@ img {
 
 h1 {
   margin: .5em 0 0;
+  font-size: 2rem;
 }
 
 .nav {
@@ -41,6 +47,6 @@ h1 {
 }
 
 .nav a:hover {
-  background-position: #d05c2e;
+  background-color: #d05c2e;
   color: #fff;
 }
