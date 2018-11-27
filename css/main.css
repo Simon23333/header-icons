@@ -1,52 +1,73 @@
-* {
+html {
   box-sizing: border-box;
   line-height: 1.5;
+  margin: 0;
 }
 
-html {
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
   margin: 0;
-  padding: 0;
 }
 
 header {
-  background-color: #d05c2e;
-  padding: 0 0 .7rem;
-  color: #fff;
-  position:relative;
-  text-align: center;
   font-family: Merriweather, serif;
-}
-
-img {
-  width: 40px;
+  background-color: #d05c2e;
+  text-align: center;
 }
 
 h1 {
-  margin: .5em 0 0;
   font-size: 2rem;
+  color: #fff;
+  margin: 0 0 .7rem;
+  padding: .5em 0 0;
+  font-weight: bold;
 }
 
-.nav {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  background-color: #d05c2e;
+nav a {
+  text-decoration: none;
+  font-size: 1.125rem;
+  text-align: center;
+  color: #fff;
+  padding: .4rem 0;
+}
+
+a:hover {
+  background-color: #a63f38;
+}
+
+.home {
+  float: left;
+  width: 50%;
+  border: 3px solid #a63f38;
+}
+
+.cereals {
+  float: left;
+  width: 50%;
+  border: 3px solid #a63f38;
+}
+
+.legumes {
+  float: right;
+  border: 3px solid #a63f38;
   overflow: hidden;
 }
 
-.nav li {
+ul {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+.left {
   float: left;
-  width: 100%;
+  width: 10%;
 }
 
-.nav a {
-  display: block;
-  padding: .3rem;
-  text-decoration: none;
-  color: #fff;
-}
-
-.nav a:hover {
-  background-color: #d05c2e;
-  color: #fff;
+.right {
+  float: right;
+  width: 10%;
 }
